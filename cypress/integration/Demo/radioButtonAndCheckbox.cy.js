@@ -8,7 +8,7 @@ describe('Understanding radio button and check boxes', () => {
     })
 
 
-    it.only('Radio button implementation', () => {
+    it('Radio button implementation', () => {
         cy.get('span').contains('My Info').click()
         cy.get('h6[class="oxd-text oxd-text--h6 orangehrm-main-title"]').contains('Personal Details')
             .should('have.text', 'Personal Details')

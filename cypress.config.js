@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 const cucumber = require("cypress-cucumber-preprocessor").default;
 
+
 module.exports = defineConfig({
   defaultCommandTimeout: 30000,
   experimentalStudio: true,
