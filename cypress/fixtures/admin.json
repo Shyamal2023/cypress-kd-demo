@@ -1,6 +1,15 @@
+[
 {
    "username": "test124",
    "userRole": "Admin",
    "employeeName": "Orange Test",
    "status": "Enabled"
+},
+{
+   "username": "JamesB",
+   "userRole": "ESS",
+   "employeeName": "James Butler",
+   "status": "Disabled"
 }
+]
+

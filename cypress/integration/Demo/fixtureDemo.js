@@ -11,9 +11,12 @@ describe('data driven testing', () => {
 
         cy.get('span').contains('Admin').click();
         cy.get("h6[class*='oxd-topbar-header-breadcrumb-module']").should('have.text', 'Admin');
-        cy.fixture('admin').then((ele) => {
+        cy.fixture('admin').then((user) => {
+            user.forEach((ele) => {
+                
+          
             //select User name
-            cy.xpath("//div[contains(@class,'-bottom-space')]/div/input[contains(@class,'input--active')]").type(ele.username)
+            cy.xpath("//div[contains(@class,'-bottom-space')]/div/input[contains(@class,'input--active')]").clear().type(ele.username)
 
             //Clicks User Role drop down
             cy.xpath("//label[text()='User Role']/../following-sibling::div//div[@class='oxd-select-text--after']").click()
@@ -22,7 +25,7 @@ describe('data driven testing', () => {
             cy.get('div.oxd-select-option').contains(ele.userRole).click()
 
             //Type Employee Name
-            cy.xpath("//label[text()='Employee Name']/../following-sibling::div//input").type(ele.employeeName)
+            cy.xpath("//label[text()='Employee Name']/../following-sibling::div//input").clear().type(ele.employeeName)
             cy.get('div.oxd-autocomplete-option').contains(ele.employeeName).click()
 
             //Select Status
@@ -33,7 +36,7 @@ describe('data driven testing', () => {
 
             //Click Search
             cy.xpath("//button[contains(@class,'secondary orangehrm-left-space')]").click()
-
+            })
 
         })
 
