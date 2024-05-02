@@ -1,14 +1,14 @@
 describe('data driven testing', () => {
-    beforeEach(() => {
-        cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
-    })
-
+   
     it("User should login successfully", () => {
+        cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+        cy.fixture('loginUser').then((data) => {
+            cy.get("input[name='username']").type(data.username)
+            cy.get("input[name='password']").type(data.password)
+            cy.get('button').contains(' Login ').click()
+            cy.get('span[class="oxd-topbar-header-breadcrumb"]').should("have.text", data.expected);
+        })
 
-        cy.get("input[name='username']").type('Admin')
-        cy.get("input[name='password']").type('admin123')
-        cy.get('button').contains(' Login ').click()
-        cy.get('span[class="oxd-topbar-header-breadcrumb"]').should("have.text", "Dashboard");
         cy.get('span').contains('Admin').click();
         cy.get("h6[class*='oxd-topbar-header-breadcrumb-module']").should('have.text', 'Admin');
         cy.fixture('admin').then((ele) => {
@@ -34,7 +34,8 @@ describe('data driven testing', () => {
             //Click Search
             cy.xpath("//button[contains(@class,'secondary orangehrm-left-space')]").click()
 
-     })
+
+        })
 
     })
 })
