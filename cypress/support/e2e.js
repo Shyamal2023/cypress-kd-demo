@@ -8,14 +8,25 @@
 // You can change the location of this file or turn off
 // automatically serving support files with the
 // 'supportFile' configuration option.
+
+Cypress.Screenshot.defaults({
+    screenshotOnRunFailure: true
+  })
+  
+  
 //
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './commands';
+import 'cypress-mochawesome-reporter/register';
+//import 'cypress-mochawesome-reporter/cucumberSupport';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 require('cypress-xpath');
+require('cypress-failed-log')
+// you can use the "import" keyword
+import "cypress-failed-log"
