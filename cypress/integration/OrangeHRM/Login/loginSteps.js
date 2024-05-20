@@ -7,7 +7,6 @@ import {
   } from "cypress-cucumber-preprocessor/steps";
 
 import loginPage from "./loginPage"
-import { should } from "chai";
 
 Given("Navigate to OrangeHRM",() =>{
    cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")

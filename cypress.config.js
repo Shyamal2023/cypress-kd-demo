@@ -28,15 +28,18 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on),
       require('cypress-failed-log/on')(on)
       },
-    //excludeSpecPattern: '*.js',
-    //specPattern: 'cypress/integration/**/*.{feature,features}',
-    specPattern: 'cypress/integration',
-  },
+    excludeSpecPattern: '*.js',
+    specPattern: 'cypress/integration/**/*.{feature,features}',
+    //specPattern: 'cypress/integration',
+    // cucumber: {
+    //   "nonGlobalStepDefinitions": true,
+    // },
   retries: {
-      openMode: 2
+      openMode: 0
   },
   compilerOptions: {
     "types": ["cypress", "@4tw/cypress-drag-drop"]
     }
+  }
 
-})
+  })

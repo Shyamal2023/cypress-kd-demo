@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/TheBrainFamily/cypress-cucumber-example#readme",
   "dependencies": {
-    "cypress-cucumber-preprocessor": "^2.5.0",
+    "cypress-cucumber-preprocessor": "^2.5.5",
     "cypress-tags": "^1.1.2"
   },
   "cypress-cucumber-preprocessor": {

@@ -1,0 +1,13 @@
+{
+  "specName": "cypress\\integration\\Demo\\debugging.js",
+  "title": "Menu list displayed",
+  "suiteName": "implementation for Login page",
+  "testName": "implementation for Login page Menu list displayed",
+  "testError": "Timed out retrying after 4000ms: Expected to find element: `a[class='oxd-main-menu-item active']>span`, but never found it.",
+  "testCommands": [
+    "visit https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "get a[class='oxd-main-menu-item active']>span",
+    "assert expected **a[class='oxd-main-menu-item active']>span** to have text **Admin**, but the text was **''**",
+    "request "
+  ]
+}

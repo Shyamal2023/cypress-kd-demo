@@ -21,7 +21,7 @@ Feature: Orangehrmlive Login Page
             | Magda      | admin123      | Invalid credentials |
             | dummyAdmin | dummyPassword | Invalid credentials |
             | admin      | Admin123      | Invalid credentials |
-
+@focus
     Scenario: Login using empty username credentails
         Given Navigate to OrangeHRM 
         When I enter a username "  "
@@ -37,7 +37,7 @@ Feature: Orangehrmlive Login Page
         And I click on the login button
         Then I should be presented with the required message for password "Required"
 
-    @focus
+    
     Scenario: Forget Passwrod button
     Given Navigate to OrangeHRM  
     When I click Forget password link

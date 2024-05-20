@@ -3,3 +3,11 @@ export function selectOption(optionText) {
     cy.get('span').contains(optionText).click();
   }
        
+  export function click(locator,name){
+
+     locator.contains(name).click();
+  }
+
+  export function verifyPageLoads(locator,name){
+    locator.should('have.text',name)
+  }

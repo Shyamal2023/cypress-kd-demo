@@ -1,0 +1,13 @@
+{
+  "specName": "cypress\\integration\\Demo\\firstTest.js",
+  "title": "Launch Browser and Navigate",
+  "suiteName": "My First Test",
+  "testName": "My First Test Launch Browser and Navigate",
+  "testError": "Timed out retrying after 4000ms: expected 'OrangeHRM' to equal 'OrangeHR'",
+  "testCommands": [
+    "visit https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "title ",
+    "assert expected **OrangeHRM** to equal **OrangeHR**",
+    "request "
+  ]
+}
