@@ -1,5 +1,5 @@
-Feature: Add New 
-@skip
+Feature: Add New Employee
+
 Scenario: Navigate to PIM
 Given Login to OrangeHRM
 Then Dashboard page is loaded
@@ -13,15 +13,12 @@ Then PIM page should display
 When I click on Add Employee tab
 Then Add Employee Title should display
 
-
 Scenario: Add new Employee
 Given Login to OrangeHRM
 When I click on PIM in side panel
 When  I click on Add Employee tab
 And I enter Employee Full name
-# And I enter Employee ID
-# And I click on Save 
- Then New Employee should be added 
+Then New Employee should be added 
 
      
 

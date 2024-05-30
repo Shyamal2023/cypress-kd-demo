@@ -37,3 +37,7 @@ Scenario: Performance page should load successfully
         When I click on Performance in side panel
         Then Performance page should open
     
+Scenario: Dashboard page should load successfully
+        Given Login to OrangeHRM
+        When I click on Dashboard in side panel
+        Then Dashboard page should open
