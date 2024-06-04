@@ -8,6 +8,10 @@ pipeline {
     string(name:'SPEC' , defaultValue:"cypress/integration/**/*.{feature,features}" , description : "Enter the script")
     choice(name : 'BROWSER', choices : ['chrome','edge','firefox'], description : "Enter the browser where the script should run")
   }
+
+  options{
+    ansiColor('xterm')
+  }
   stages {
     stage('Build') {
       steps {
