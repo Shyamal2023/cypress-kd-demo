@@ -2,7 +2,7 @@ pipeline {
   agent any
    environment {
         // Define the credentials ID for GitHub
-        GITHUB_CREDENTIALS = 'eed59897-d95d-4685-8a52-cf482e42706fere'
+        GITHUB_CREDENTIALS = 'de4a2f73-cf01-4fa3-a3b9-2d8cff0572ec'
     }
   parameters{
     string(name:'SPEC' , defaultValue:"cypress/integration/**/*.{feature,features}" , description : "Enter the script")
