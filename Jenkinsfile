@@ -2,7 +2,7 @@ pipeline {
   agent any
   parameters{
     string(name:'SPEC' , defaultValue:"cypress/integration/**/*.{feature,features}" , description : "Enter the script")
-    choice(name : 'BROWSER', choices['chrome','edge','firefox'], description : "Enter the browser where the script should run")
+    choice(name : 'BROWSER', choices : ['chrome','edge','firefox'], description : "Enter the browser where the script should run")
   }
   stages {
     stage('Build') {
