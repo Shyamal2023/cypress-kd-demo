@@ -18,7 +18,7 @@ pipeline {
     stage('Checkout') {
             steps {
                 // Checkout the code from the GitHub repository
-                  git branch: 'main', git credentialsId: 'de4a2f73-cf01-4fa3-a3b9-2d8cff0572ec', url: 'https://github.com/Shyamal2023/cypress-kd-demo.git'
+                  git branch:'main', git credentialsId:'de4a2f73-cf01-4fa3-a3b9-2d8cff0572ec', url:'https://github.com/Shyamal2023/cypress-kd-demo.git'
             }
         }
         
