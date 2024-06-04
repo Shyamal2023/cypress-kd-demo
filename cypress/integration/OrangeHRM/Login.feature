@@ -21,7 +21,7 @@ Feature: Orangehrmlive Login Page
             | Magda      | admin123      | Invalid credentials |
             | dummyAdmin | dummyPassword | Invalid credentials |
             | admin      | Admin123      | Invalid credentials |
-@focus
+
     Scenario: Login using empty username credentails
         Given Navigate to OrangeHRM 
         When I enter a username "  "
