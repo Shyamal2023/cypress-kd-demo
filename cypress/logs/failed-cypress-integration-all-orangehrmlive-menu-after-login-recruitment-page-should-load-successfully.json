@@ -1,0 +1,11 @@
+{
+  "specName": "cypress\\integration\\All.features",
+  "title": "Recruitment page should load successfully",
+  "suiteName": "Orangehrmlive Menu after login",
+  "testName": "Orangehrmlive Menu after login Recruitment page should load successfully",
+  "testError": "Step implementation missing for: Login to OrangeHRM",
+  "testCommands": [
+    "step **Login to OrangeHRM**",
+    "then {}, function(){}"
+  ]
+}

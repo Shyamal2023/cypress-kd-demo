@@ -1,0 +1,11 @@
+{
+  "specName": "cypress\\integration\\All.features",
+  "title": "Navigate to PIM",
+  "suiteName": "Add New Employee",
+  "testName": "Add New Employee Navigate to PIM",
+  "testError": "Step implementation missing for: Login to OrangeHRM",
+  "testCommands": [
+    "step **Login to OrangeHRM**",
+    "then {}, function(){}"
+  ]
+}

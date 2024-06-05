@@ -31,9 +31,9 @@ module.exports = defineConfig({
     excludeSpecPattern: '*.js',
     specPattern: 'cypress/integration/**/*.{feature,features}',
     //specPattern: 'cypress/integration',
-    // cucumber: {
-    //   "nonGlobalStepDefinitions": true,
-    // },
+    cucumber: {
+       "nonGlobalStepDefinitions": true,
+    },
   retries: {
       openMode: 0
   },

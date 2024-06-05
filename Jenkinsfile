@@ -11,6 +11,7 @@ pipeline {
 
   options{
     ansiColor('xterm')
+    retry(1)
   }
   stages {
     stage('Build') {
@@ -31,6 +32,7 @@ pipeline {
             steps {
                 // Install necessary dependencies (assuming npm)
                 bat "npm install"
+                bat "npm install --save-dev cypress-cucumber-preprocessor"
                 }
         }
 
