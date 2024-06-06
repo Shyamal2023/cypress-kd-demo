@@ -13,9 +13,12 @@
 
 const cucumber = require('cypress-cucumber-preprocessor').default
 
+
+
 module.exports = (on, config) => {
  
   on('file:preprocessor', cucumber())
+   
   on('task', {
 
   log(message){
@@ -23,6 +26,6 @@ module.exports = (on, config) => {
     return null
     },
   })
-    
+ 
 }
 

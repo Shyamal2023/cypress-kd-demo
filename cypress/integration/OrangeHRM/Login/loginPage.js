@@ -10,7 +10,7 @@ class loginPage {
     errorMsg: () => cy.get('div[role="alert"]'),
     emptyUsernameFieldMsg: () => cy.get(".oxd-input-group > .oxd-text"),
     emptyPasswordFieldMsg: () => cy.get(".oxd-input-group > .oxd-text"),
-    forgotPasswordBtn: () => cy.contains("Forgot your password?"),
+    forgotPasswordBtn: () => cy.get("p[class$='orangehrm-login-forgot-header']"),
     dropdownAboutAlert: () => cy.get(".orangehrm-modal-header > .oxd-text"),
     resetPasswordBox: () => cy.get("form[class='oxd-form'] > h6")
   }

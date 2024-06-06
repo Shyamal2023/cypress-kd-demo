@@ -1,5 +1,3 @@
-
-      
 Feature: Orangehrmlive Menu after login
 
  Scenario: Admin page should load successfully
