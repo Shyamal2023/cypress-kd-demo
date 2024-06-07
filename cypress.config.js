@@ -43,7 +43,7 @@ module.exports = defineConfig({
     },
         
   retries: {
-      openMode: 0
+      openMode: 1
   },
   compilerOptions: {
     "types": ["cypress", "@4tw/cypress-drag-drop"]
