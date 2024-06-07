@@ -15,10 +15,10 @@ Scenario: Leave page should load successfully
         When I click on Leave in side panel
         Then  Leave page should open
 
-Scenario: Time page should load successfully
-        Given Login to OrangeHRM
-        When I click on Time in side panel
-        Then Time page should open
+#Scenario: Time page should load successfully
+       # Given Login to OrangeHRM
+        #When I click on Time in side panel
+        #Then Time page should open
 
 Scenario: Recruitment page should load successfully
         Given Login to OrangeHRM

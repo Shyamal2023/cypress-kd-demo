@@ -7,7 +7,8 @@ class editEmployeePage{
         editButton : () => cy.get('.oxd-table-cell-actions > :nth-child(2) > .oxd-icon'),
         empNameOnEditPage : () => cy.get("div.orangehrm-edit-employee-name"),
         firstNameOnEditPage : () => cy.get("input[name='firstName']"),
-        saveButtonOnEditPage : () => cy.get(".oxd-form-actions > :nth-child(2) ")
+        saveButtonOnEditPage : () => cy.get(".oxd-form-actions > :nth-child(2) "),
+        checkbox: () => cy.get("div.oxd-table-card-cell-checkbox >div > label > input[type='checkbox']"),
 
     }
    searchByEmpID(empID){
@@ -18,6 +19,7 @@ class editEmployeePage{
 
    employeeDisplayedInSearchTable(empID){
     this.elements.searchResults().should('contain',empID)
+    //this.elements.checkbox().first().check({ force: true })
    }
 
    clickEditButton(){
