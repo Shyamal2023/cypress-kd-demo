@@ -44,7 +44,7 @@ pipeline {
                 always {
                                         
                     // Publish HTML test report
-                    publishHTML(target: [
+                    publishHTML (target: [
                         allowMissing: false,
                         alwaysLinkToLastBuild: true,
                         keepAll: true,
