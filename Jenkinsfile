@@ -44,30 +44,16 @@ pipeline {
                 always {
                                         
                     // Publish HTML test report
-                    publishHTML (target: [
+                    publishHTML(target: [
                         allowMissing: false,
                         alwaysLinkToLastBuild: true,
                         keepAll: true,
                         reportDir: 'cypress/reports/html',
-                        reportFiles: 'index.html',
+                        reportFiles: 'test-report.html',
                         reportName: 'Test Report'
                     ])
 
-                     success {
-            emailext (
-                to: 'shyamal.nakade@gmail.com',
-                subject: "Pipeline ${currentBuild.fullDisplayName} succeeded",
-                body: "Congratulations! Your pipeline ${currentBuild.fullDisplayName} completed successfully.\n\nCheck it out at: ${env.BUILD_URL}",
-            )
-        }
-        failure {
-            emailext (
-                to: 'shyamal.nakade@mail.com',
-                subject: "Pipeline ${currentBuild.fullDisplayName} failed",
-                body: "Oops! Your pipeline ${currentBuild.fullDisplayName} failed.\n\nCheck the console output at: ${env.BUILD_URL}/console",
-            )
-        }
-                }
+                 }
             }
     }
 
