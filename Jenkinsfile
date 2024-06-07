@@ -50,8 +50,23 @@ pipeline {
                         keepAll: true,
                         reportDir: 'cypress/reports/html',
                         reportFiles: 'index.html',
-                        reportName: 'Cypress Cucumber Test Report'
+                        reportName: 'Test Report'
                     ])
+
+                     success {
+            emailext (
+                to: 'shyamal.nakade@gmail.com',
+                subject: "Pipeline ${currentBuild.fullDisplayName} succeeded",
+                body: "Congratulations! Your pipeline ${currentBuild.fullDisplayName} completed successfully.\n\nCheck it out at: ${env.BUILD_URL}",
+            )
+        }
+        failure {
+            emailext (
+                to: 'shyamal.nakade@mail.com',
+                subject: "Pipeline ${currentBuild.fullDisplayName} failed",
+                body: "Oops! Your pipeline ${currentBuild.fullDisplayName} failed.\n\nCheck the console output at: ${env.BUILD_URL}/console",
+            )
+        }
                 }
             }
     }
