@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-19T14:56:21.445Z",
+    "end": "2024-10-19T14:57:28.155Z",
+    "duration": 66710,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "35c33cdb-1143-4c78-ac53-1d239d140e19",
+      "title": "",
+      "fullFile": "cypress\\integration\\OrangeHRM\\PIM\\1-AddEmployee.feature",
+      "file": "cypress\\integration\\OrangeHRM\\PIM\\1-AddEmployee.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "33f9115e-91eb-4995-9837-54b3b82b5bf9",
+          "title": "Add New Employee",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigate to PIM",
+              "fullTitle": "Add New Employee Navigate to PIM",
+              "timedOut": null,
+              "duration": 12557,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\integration\\\\OrangeHRM\\\\PIM\\\\1-AddEmployee.feature\"\n}",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "29559375-4dff-41c4-828e-f49a9042b983",
+              "parentUUID": "33f9115e-91eb-4995-9837-54b3b82b5bf9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Navigate to Add Employee page",
+              "fullTitle": "Add New Employee Navigate to Add Employee page",
+              "timedOut": null,
+              "duration": 11295,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\integration\\\\OrangeHRM\\\\PIM\\\\1-AddEmployee.feature\"\n}",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "e3fdbac6-1bd4-4650-ac75-c10f59fa4b4e",
+              "parentUUID": "33f9115e-91eb-4995-9837-54b3b82b5bf9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add new Employee",
+              "fullTitle": "Add New Employee Add new Employee",
+              "timedOut": null,
+              "duration": 39793,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\integration\\\\OrangeHRM\\\\PIM\\\\1-AddEmployee.feature\"\n}",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "15102294-78b7-4beb-8e8f-f3d7e74f8735",
+              "parentUUID": "33f9115e-91eb-4995-9837-54b3b82b5bf9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "29559375-4dff-41c4-828e-f49a9042b983",
+            "e3fdbac6-1bd4-4650-ac75-c10f59fa4b4e",
+            "15102294-78b7-4beb-8e8f-f3d7e74f8735"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 63645,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "test-report.html",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "Cypress Report",
+        "embeddedScreenshots": true,
+        "videoOnFailOnly": false,
+        "inlineAssets": true,
+        "reportFilename": "test-report.html",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

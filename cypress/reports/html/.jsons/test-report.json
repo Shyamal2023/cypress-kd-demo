@@ -1,0 +1,249 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 7,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-10-19T14:54:49.741Z",
+    "end": "2024-10-19T14:55:20.913Z",
+    "duration": 31172,
+    "testsRegistered": 8,
+    "passPercent": 87.5,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3c96b4b9-17f0-43c7-951e-238bd5db1824",
+      "title": "",
+      "fullFile": "cypress\\integration\\OrangeHRM\\Login.feature",
+      "file": "cypress\\integration\\OrangeHRM\\Login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4aaf500a-81b5-4749-80b4-182a49eb0225",
+          "title": "Orangehrmlive Login Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login using valid credentails",
+              "fullTitle": "Orangehrmlive Login Page Login using valid credentails",
+              "timedOut": null,
+              "duration": 8893,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\integration\\\\OrangeHRM\\\\Login.feature\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Login.feature\\\\Orangehrmlive Login Page -- Login using valid credentails (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<span.oxd-topbar-header-breadcrumb>' to have text 'Dashboar', but the text was 'Dashboard'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<span.oxd-topbar-header-breadcrumb>' to have text 'Dashboar', but the text was 'Dashboard'\n    at loginPage.verifyDashboardPageOpens (cypress/integration/OrangeHRM/Login/loginPage.js:41:34)\n    at Context.eval (cypress/integration/OrangeHRM/Login/loginSteps.js:33:14)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": "- 'Dashboard'\n+ 'Dashboar'\n"
+              },
+              "uuid": "7b03e291-1152-4ecf-842a-0cb81b855b02",
+              "parentUUID": "4aaf500a-81b5-4749-80b4-182a49eb0225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using invalid credentails (example #1)",
+              "fullTitle": "Orangehrmlive Login Page Login using invalid credentails (example #1)",
+              "timedOut": null,
+              "duration": 3491,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\integration\\\\OrangeHRM\\\\Login.feature\"\n}",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "9900b03e-a2ef-4564-8fa1-309fdb4e77d2",
+              "parentUUID": "4aaf500a-81b5-4749-80b4-182a49eb0225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using invalid credentails (example #2)",
+              "fullTitle": "Orangehrmlive Login Page Login using invalid credentails (example #2)",
+              "timedOut": null,
+              "duration": 3089,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\integration\\\\OrangeHRM\\\\Login.feature\"\n}",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "95b2d246-8dba-4913-9cec-c326d78acf2a",
+              "parentUUID": "4aaf500a-81b5-4749-80b4-182a49eb0225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using invalid credentails (example #3)",
+              "fullTitle": "Orangehrmlive Login Page Login using invalid credentails (example #3)",
+              "timedOut": null,
+              "duration": 2683,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\integration\\\\OrangeHRM\\\\Login.feature\"\n}",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "3699289b-38e1-490f-a867-39a45d3b958e",
+              "parentUUID": "4aaf500a-81b5-4749-80b4-182a49eb0225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using invalid credentails (example #4)",
+              "fullTitle": "Orangehrmlive Login Page Login using invalid credentails (example #4)",
+              "timedOut": null,
+              "duration": 3139,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\integration\\\\OrangeHRM\\\\Login.feature\"\n}",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "fbb111fe-810a-478c-a904-9ea3a8bafcb3",
+              "parentUUID": "4aaf500a-81b5-4749-80b4-182a49eb0225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using empty username credentails",
+              "fullTitle": "Orangehrmlive Login Page Login using empty username credentails",
+              "timedOut": null,
+              "duration": 1805,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\integration\\\\OrangeHRM\\\\Login.feature\"\n}",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "4deea16c-fbf1-4f22-abeb-085fc6e75bd6",
+              "parentUUID": "4aaf500a-81b5-4749-80b4-182a49eb0225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using empty password credentails",
+              "fullTitle": "Orangehrmlive Login Page Login using empty password credentails",
+              "timedOut": null,
+              "duration": 1735,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\integration\\\\OrangeHRM\\\\Login.feature\"\n}",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "2ff8689f-7812-4dd7-89cd-cd9990a45ac2",
+              "parentUUID": "4aaf500a-81b5-4749-80b4-182a49eb0225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Forget Passwrod button",
+              "fullTitle": "Orangehrmlive Login Page Forget Passwrod button",
+              "timedOut": null,
+              "duration": 2063,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\integration\\\\OrangeHRM\\\\Login.feature\"\n}",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "6dfb8662-1cf1-4385-bc14-30b8c4e21ae0",
+              "parentUUID": "4aaf500a-81b5-4749-80b4-182a49eb0225",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9900b03e-a2ef-4564-8fa1-309fdb4e77d2",
+            "95b2d246-8dba-4913-9cec-c326d78acf2a",
+            "3699289b-38e1-490f-a867-39a45d3b958e",
+            "fbb111fe-810a-478c-a904-9ea3a8bafcb3",
+            "4deea16c-fbf1-4f22-abeb-085fc6e75bd6",
+            "2ff8689f-7812-4dd7-89cd-cd9990a45ac2",
+            "6dfb8662-1cf1-4385-bc14-30b8c4e21ae0"
+          ],
+          "failures": [
+            "7b03e291-1152-4ecf-842a-0cb81b855b02"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 26898,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "test-report.html",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "Cypress Report",
+        "embeddedScreenshots": true,
+        "videoOnFailOnly": false,
+        "inlineAssets": true,
+        "reportFilename": "test-report.html",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

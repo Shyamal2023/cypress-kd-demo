@@ -1,0 +1,14 @@
+{
+  "specName": "cypress\\integration\\APITesting\\alias.cy.js",
+  "title": "use alias to verify body",
+  "suiteName": "API testing demo",
+  "testName": "API testing demo use alias to verify body",
+  "testError": "expected { Object (id, name, ...) } to have property 'name' of 'Amb. Abani Gill', but got 'Devagya Nambeesan'",
+  "testCommands": [
+    "request ",
+    "get @users",
+    "its .body",
+    "assert expected **{ Object (id, name, ...) }** to have property **name**",
+    "assert expected **{ Object (id, name, ...) }** to have property **name** of **Amb. Abani Gill**, but got **Devagya Nambeesan**"
+  ]
+}

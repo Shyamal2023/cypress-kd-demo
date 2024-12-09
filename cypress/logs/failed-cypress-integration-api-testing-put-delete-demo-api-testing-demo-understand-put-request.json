@@ -1,0 +1,8 @@
+{
+  "specName": "cypress\\integration\\APITesting\\put_delete_demo.cy.js",
+  "title": "understand put request",
+  "suiteName": "API testing demo",
+  "testName": "API testing demo understand put request",
+  "testError": "userID is not defined",
+  "testCommands": []
+}

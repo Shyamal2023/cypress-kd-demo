@@ -1,0 +1,15 @@
+{
+  "specName": "cypress\\integration\\APITesting\\post-request-demo.cy.js",
+  "title": "post request - random data",
+  "suiteName": "API testing demo",
+  "testName": "API testing demo post request - random data",
+  "testError": "expected '2Jt07FvWLQ@gmail.com' to have property 'email'",
+  "testCommands": [
+    "request ",
+    "assert expected **Laxman13** to equal **Laxman13**",
+    "assert expected **Laxman13** to equal **Laxman13**",
+    "assert expected **{ Object (id, name, ...) }** to have property **name**",
+    "assert expected **{ Object (id, name, ...) }** to have property **name** of **Laxman13**",
+    "assert expected **2Jt07FvWLQ@gmail.com** to have property **email**"
+  ]
+}

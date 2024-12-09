@@ -38,7 +38,7 @@ class loginPage {
 
   verifyDashboardPageOpens()
   {
-    this.elements.dashboardPage().should('have.text',"Dashboard")
+    this.elements.dashboardPage().should('have.text',"Dashboar")
   }
 
   clickForgotPasswordBtn() {

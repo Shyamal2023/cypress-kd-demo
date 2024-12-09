@@ -1,0 +1,12 @@
+{
+  "specName": "cypress\\integration\\APITesting\\alias.cy.js",
+  "title": "use alias and get command",
+  "suiteName": "API testing demo",
+  "testName": "API testing demo use alias and get command",
+  "testError": "Timed out retrying after 4000ms: `cy.its()` errored because the property: `Headers` does not exist on your subject.\n\n`cy.its()` waited for the specified property `Headers` to exist, but it never did.\n\nIf you do not expect the property `Headers` to exist, then add an assertion such as:\n\n`cy.wrap({ foo: 'bar' }).its('quux').should('not.exist')`",
+  "testCommands": [
+    "request ",
+    "get @users",
+    "its .Headers"
+  ]
+}

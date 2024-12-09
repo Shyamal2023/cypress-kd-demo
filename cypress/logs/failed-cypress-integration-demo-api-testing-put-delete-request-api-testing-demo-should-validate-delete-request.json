@@ -1,0 +1,18 @@
+{
+  "specName": "cypress\\integration\\Demo_APITesting\\PUT_DELETE _request.cy.js",
+  "title": "should validate DELETE request",
+  "suiteName": "API testing demo",
+  "testName": "API testing demo should validate DELETE request",
+  "testError": "`cy.request()` failed on:\n\nhttps://gorest.co.in/public/v2/users/[object%20Object]\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: https://gorest.co.in/public/v2/users/[object%20Object]\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"authorization\": \"Bearer 93e89899563133aaf2fdd0c87b878d624aee3a44cec6aed8384a2b00bea83969\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"date\": \"Sun, 08 Dec 2024 14:35:51 GMT\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"32\",\n  \"connection\": \"keep-alive\",\n  \"cache-control\": \"no-cache\",\n  \"referrer-policy\": \"strict-origin-when-cross-origin\",\n  \"vary\": \"Origin\",\n  \"x-content-type-options\": \"nosniff\",\n  \"x-download-options\": \"noopen\",\n  \"x-frame-options\": \"SAMEORIGIN\",\n  \"x-permitted-cross-domain-policies\": \"none\",\n  \"x-ratelimit-limit\": \"90\",\n  \"x-ratelimit-remaining\": \"85\",\n  \"x-ratelimit-reset\": \"4\",\n  \"x-request-id\": \"6adf0f65-2b2d-4167-ae79-e8fc15fd76a5\",\n  \"x-runtime\": \"0.028947\",\n  \"x-xss-protection\": \"0\",\n  \"cf-cache-status\": \"DYNAMIC\",\n  \"report-to\": \"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v4?s=nZEGZMmhh0ysuyIZxqdgAWHG8wWXhyNmF0mEkQvWpmA1xy99MIhbwBcUWHGmU9jqYIwH4QabxMeMf1eHmUcEFydWTy78HV1C6JGhEmIrcOMb1w0rFRnlCuRTscN8tOta4iQG9iAqxJW5%2B9I%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"nel\": \"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"server\": \"cloudflare\",\n  \"cf-ray\": \"8eed7bff7c33e165-MRS\",\n  \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\",\n  \"server-timing\": \"cfL4;desc=\\\"?proto=TCP&rtt=164764&min_rtt=123912&rtt_var=22516&sent=714&recv=668&lost=0&retrans=0&sent_bytes=55110&recv_bytes=18001&delivery_rate=44479&cwnd=257&unsent_bytes=0&cid=31b86fe09fc3bfd0&ts=703583&x=0\\\"\"\n}\nBody: {\n  \"message\": \"Resource not found\"\n}\n",
+  "testCommands": [
+    "request ",
+    "assert expected **201** to equal **201**",
+    "request ",
+    "assert expected **Name2** to equal **Name2**",
+    "assert expected **Name2** to equal **Name2**",
+    "assert expected **{ Object (email, name, ...) }** to have property **name**",
+    "assert expected **{ Object (email, name, ...) }** to have property **name** of **Name2**",
+    "assert expected **kB5sQITbQL@gmail.com** to equal **kB5sQITbQL@gmail.com**",
+    "request "
+  ]
+}

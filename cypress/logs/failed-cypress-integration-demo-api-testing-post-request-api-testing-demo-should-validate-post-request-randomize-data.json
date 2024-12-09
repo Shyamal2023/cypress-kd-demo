@@ -1,0 +1,8 @@
+{
+  "specName": "cypress\\integration\\Demo_APITesting\\POST_Request.cy.js",
+  "title": "should validate Post request - randomize data ",
+  "suiteName": "API testing demo",
+  "testName": "API testing demo should validate Post request - randomize data ",
+  "testError": "util is not defined",
+  "testCommands": []
+}

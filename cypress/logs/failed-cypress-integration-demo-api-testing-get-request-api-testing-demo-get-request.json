@@ -1,0 +1,14 @@
+{
+  "specName": "cypress\\integration\\Demo_APITesting\\getRequest.cy.js",
+  "title": "get request",
+  "suiteName": "API testing demo",
+  "testName": "API testing demo get request",
+  "testError": "expecte is not defined",
+  "testCommands": [
+    "request ",
+    "assert expected **200** to equal **200**",
+    "assert expected **[ Array(10) ]** to have property **length**",
+    "assert expected **[ Array(10) ]** to have a length of **10**",
+    "then function(){}"
+  ]
+}

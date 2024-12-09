@@ -1,0 +1,14 @@
+{
+  "specName": "cypress\\integration\\APITesting\\alias.cy.js",
+  "title": "get request",
+  "suiteName": "API testing demo",
+  "testName": "API testing demo get request",
+  "testError": "Timed out retrying after 4000ms: expected 'W/\"26f689a15f570b97f64a8ea664fcb0af\"' to include 'W/\"9a10de80ef5e994e44241d7b490228bb\"'",
+  "testCommands": [
+    "request ",
+    "get @users",
+    "its .headers",
+    "its .etag",
+    "assert expected **W/\"26f689a15f570b97f64a8ea664fcb0af\"** to include **W/\"9a10de80ef5e994e44241d7b490228bb\"**"
+  ]
+}

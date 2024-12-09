@@ -1,0 +1,11 @@
+{
+  "specName": "cypress\\integration\\Demo_APITesting\\PUT_Request.cy.js",
+  "title": "should validate Post request",
+  "suiteName": "API testing demo",
+  "testName": "API testing demo should validate Post request",
+  "testError": "expected 200 to equal 201",
+  "testCommands": [
+    "request ",
+    "assert expected **200** to equal **201**"
+  ]
+}

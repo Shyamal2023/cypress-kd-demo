@@ -1,0 +1,10 @@
+{
+  "specName": "cypress\\integration\\Demo_APITesting\\alias_get_request.cy.js",
+  "title": "should validate  the data using alias",
+  "suiteName": "",
+  "testName": "should validate  the data using alias",
+  "testError": "`cy.get()` could not find a registered alias for: `@users`.\nYou have not aliased anything yet.",
+  "testCommands": [
+    "get @users"
+  ]
+}

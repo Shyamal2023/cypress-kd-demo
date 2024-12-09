@@ -1,0 +1,11 @@
+{
+  "specName": "cypress\\integration\\Demo_APITesting\\alias_get_request.cy.js",
+  "title": "should validate the status code usin alias",
+  "suiteName": "Alias and Get command demo",
+  "testName": "Alias and Get command demo should validate the status code usin alias",
+  "testError": "`@users` cannot be named starting with the `@` symbol. Try renaming the alias to `users`, or something else that does not start with the `@` symbol.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Alias and Get command demo`",
+  "testCommands": [
+    "request ",
+    "as @users"
+  ]
+}
